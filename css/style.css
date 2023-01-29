@@ -1,3 +1,20 @@
+@import "background.css";
+@import "main.css";
+@import "quote.css";
+@import "weather.css";
+@import "todo.css";
+
 .hidden {
-    display: none;
+  display: none;
+}
+
+* {
+  color: white;
+}
+
+body {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

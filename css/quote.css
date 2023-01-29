@@ -1,0 +1,16 @@
+.quoteBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.quoteBox .quote {
+  font-size: 25px;
+  color: rgb(231, 167, 167);
+}
+
+.quoteBox .author {
+  padding-top: 10px;
+  font-size: 18px;
+  color: rgb(231, 167, 167);
+}

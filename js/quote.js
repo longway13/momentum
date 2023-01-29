@@ -21,7 +21,7 @@ const quotes = [
   },
   {
     quote:
-      "I fint the harder work, the more luch I have",
+      "I fint the harder work, the more luck I have",
     author: "Thomas Jefferson",
   },
   {

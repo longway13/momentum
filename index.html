@@ -14,35 +14,51 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="clock">
-      <span></span>
-    </div>
-    <div class="login">
-      <form class="login-form hidden">
-        <input
-          type="text"
-          placeholder="Write your name 😁"
-          required
-          maxlength="15"
-        />
-        <button>Log in</button>
-      </form>
-      <span class="greeting hidden"></span>
-    </div>
-    <div class="toDo">
-      <form class="toDo-form">
-        <input placeholder="Write your to do!" />
-      </form>
-      <ul class="toDo-list"></ul>
-    </div>
-    <div class="quoteBox">
-      <span class="quote"></span>
-      <span class="author"></span>
-    </div>
     <div class="weather">
       <span class="temp"></span>
       <span class="location"></span>
     </div>
+    <main>
+      <div class="clock">
+        <span>00:00</span>
+      </div>
+      <div class="login">
+        <form class="login-form hidden">
+          <label for="name"
+            >Write your name 😁</label
+          >
+          <input
+            type="text"
+            id="name"
+            required
+            maxlength="15"
+          />
+          <button>Log in</button>
+        </form>
+        <span class="greeting hidden"></span>
+      </div>
+      <div class="todoBox">
+        <div class="empty todoBox_column">
+          empty
+        </div>
+        <div class="toDo todoBox_column">
+          <form class="toDo-form">
+            <label for="todo">New Todo</label>
+            <input id="todo" />
+          </form>
+        </div>
+        <div class="todoBox_column">
+          <ul class="toDo-list"></ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="quoteBox">
+        <span class="quote"></span>
+        <span class="author"></span>
+      </div>
+    </footer>
+
     <div class="backgroundImg"></div>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>

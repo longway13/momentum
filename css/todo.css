@@ -1,0 +1,68 @@
+.todoBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.todoBox_column:first-child {
+  width: 33%;
+  visibility: hidden;
+}
+.todoBox_column:last-child {
+  display: flex;
+  justify-content: center;
+  width: 32%;
+}
+.toDo {
+  width: 34%;
+  display: flex;
+  justify-content: center;
+}
+.toDo-form {
+  display: flex;
+  flex-direction: column;
+}
+.toDo-form label {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.toDo-form input {
+  background: transparent;
+  font-size: 40px;
+  border: none;
+  width: 0px;
+  transition: all 2s ease-in-out;
+}
+.toDo-form input:focus {
+  outline: none;
+  width: 600px;
+  border-bottom: 3px rgb(196, 246, 242) solid;
+}
+
+.toDo-list {
+  width: 50%;
+  border-radius: 10%;
+  padding-top: 5px;
+  border-bottom-right-radius: 5%;
+  background-color: rgb(116, 136, 129);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 5px 10px 15px rgb(161, 149, 149);
+}
+
+.toDo-list li {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.toDo-list li span {
+  font-size: 20px;
+}
+.toDo-list li button {
+  border: none;
+  border-radius: 10%;
+  color: black;
+}
