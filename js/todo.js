@@ -15,6 +15,9 @@ const deleteToDo = (event) => {
   });
   saveToDo(TODOS_KEY, toDos);
   li.remove();
+  if (toDos.length === 0) {
+    toDoList.classList.add(HIDDEN_CLASSNAME);
+  }
 };
 
 const saveToDo = () => {
@@ -46,6 +49,9 @@ const submitToDo = (event) => {
     text: newToDo,
   };
   toDos.push(newToDoObj);
+  if (toDos.length === 1) {
+    toDoList.classList.remove(HIDDEN_CLASSNAME);
+  }
   paintToDo(newToDoObj);
   saveToDo();
 };
@@ -58,5 +64,8 @@ const savedToDos =
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
+  if (toDos.length === 0) {
+    toDoList.classList.add(HIDDEN_CLASSNAME);
+  }
   parsedToDos.forEach(paintToDo);
 }
